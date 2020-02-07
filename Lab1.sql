@@ -1,3 +1,4 @@
+-- Restaurant and Reviews 
 use cs145;
 create table rest(ID varchar(30) primary key, r_name varchar(50), location varchar(100), rating float);
 select * from rest;
