@@ -56,6 +56,6 @@ values ("ADA", "10:30:00", "C407", 3),
 insert into ENROLLED
 values (1,"DBMS"), (2, "DBMS"), (3, "LA"), (4, "OS"), (5, "TFCS"), (6, "ADA"), (7, "LA");
 
-
+--Quries Not done
 
 
