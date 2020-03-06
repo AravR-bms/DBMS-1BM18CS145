@@ -40,4 +40,3 @@ insert into catalog values(10003,20003,30);
 insert into catalog values(10004,20003,40);
 select * from catalog;
 select * from parts;
-© 2020 GitHub, Inc.
