@@ -44,6 +44,15 @@ CREATE TABLE Loan (
         REFERENCES Branch (branch_name)
 );
 
+CREATE TABLE borrower (
+    cust_name VARCHAR(20),
+    loan_num INT,
+    FOREIGN KEY (cust_name)
+        REFERENCES Bank_Customer (customername),
+    FOREIGN KEY (loan_num)
+        REFERENCES Loan (loan_num)
+);
+
 -- 2
 INSERT INTO Branch VALUES(
 'SBI_Chamrajpet','Bangalore',50000),
@@ -63,6 +72,7 @@ INSERT INTO Bank_Customer VALUES("Avinash","Bull Temple Road","Bangalore"),
 
 INSERT INTO Loan VALUES(1,"SBI_Chamrajpet",1000),(2,"SBI_ResidencyRoad",2000),(3,"SBI_ShivajiRoad",3000),(4,"SBI_ParliamentRoad",4000),(5,"SBI_Jantarmantar",5000);
 INSERT INTO Depositor VALUES("Avinash",1),("Dinesh",2),("Nikil",4),("Ravi",5),("Avinash",8),("Nikil",9),("Dinesh",10),("Nikil",11);
+INSERT INTO borrower VALUES('Avinash',1), ('Dinesh',2), ('Nikil',3), ('Avinash', 4), ('Dinesh', 5);
 
 
 -- 3
